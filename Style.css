@@ -1,0 +1,181 @@
+.nav {
+    background-color: #FFB6BA;
+    margin: -19px 0 0 0;
+    width: 100%;
+}
+.logo {
+    width: 200px;
+    padding-top: 20px;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8d2d7;
+    margin: 0;
+}
+
+header {
+    background: #FFB6BA;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 20px 2px 2px 2px;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+.active {
+    color: #53D688;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 20px 70px 0 70px;
+    
+}
+
+.event-box {
+    background-color: #d0d0d0;
+    padding: 20px ;
+    text-align: center;
+    margin: 20px;
+    height: 190px;
+    width: 1300px;
+}
+
+.event {
+    width: 1210px;
+    height: 160px;
+    padding-bottom: 10px;
+}
+
+.Produk {
+    text-align: center;
+}
+
+.card {
+    display: inline-block;
+    width: 200px;
+    margin: 15px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.button {
+    background-color: #53D688;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+.button :hover {
+    background-color: white;
+    color: #53D688;
+}
+
+.foto {
+    width: 148px;
+    height: 148px;
+}
+
+.judul {
+    font-weight: bolder;
+    font-size: 40px;
+    margin-left: 30px;
+}
+
+.paragraf {
+    padding-left: 50px;
+    width: 600px;
+    font-size: 20px;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 500px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    margin-left: 100px;
+  }
+  
+.accordion:hover {
+    background-color: #ccc; 
+  }
+  
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    margin-left: 100px;
+    width: 464px;
+    /* margin-bottom: 50px; */
+
+
+}
+.main {
+    display:flex;
+}
+
+.badan2 {
+    margin-top: 10%;
+}
+
+.kotak {
+    padding: 20px;
+    display: flex;
+}
+input, textarea {
+    width: 90%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.buttonConfirm {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 20%;
+
+}
+.buttonConfirm:hover {
+    background-color: #45a049;
+}
+
+.cart {
+    margin-top: 10%;
+    margin-left: 10%;
+    width: 30px;
+    height: 30px;
+}
+
+.nav {
+    display: flex;
+    width: 20%;
+}

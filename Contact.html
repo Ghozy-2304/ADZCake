@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="assets/Nama.png" alt="" class="logo">
+        <nav class="nav">
+            <ul>
+                <li><a href="http://127.0.0.1:3000/index.html" >Home</a></li>
+                <li><a href="http://127.0.0.1:3000/About.html">About</a></li>
+                <li><a href="http://127.0.0.1:3000/Contact.html?" class="active">Contact</a></li>
+            </ul>
+            <img src="assets/Cart.png" alt="cart" class="cart">
+        </nav>
+        
+        <button class="dark-mode" onclick="darkMode()">Dark Mode</button>
+
+    </header>
+
+    <div class="kotak">
+        <div>
+            <h1>Contact</h1>
+            <form id="contactForm">
+                <input type="text" id="firstName" placeholder="Your first name" >
+                <input type="text" id="lastName" placeholder="Your last name" >
+                <input type="email" id="email" placeholder="example@example.com" >
+                <textarea id="message" placeholder="Your message..." ></textarea><br>
+                <button type="submit" class="buttonConfirm">Kirim</button>
+            </form>
+        </div>
+        <div>
+            <h2>Alamat</h2>
+            <ul>
+                <li>Eco Village Serpong, Mekar Sari, Kec. Rumpin, Kabupaten Bogor, Jawa Barat 16350.</li>
+                <li>0812-xxxx-xxxx</li>
+                <li>example@gmail.com</li>
+            </ul>
+        </div>
+    </div>
+    <script src="Script.js"></script>
+</body>
+</html>
