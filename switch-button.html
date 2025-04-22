@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Switch Botton</title>
+    <style>
+    .toggle {
+      /* -webkit-appearance: none; */
+      /* -moz-appearance: none; */
+      appearance: none;
+      width: 100px;
+      height: 30px;
+      position: relative;
+      border-radius: 20px;
+      /* display: inline-block; */
+      overflow: hidden;
+      /* outline: none; */
+      /* border: none; */
+      /* cursor: pointer; */
+      background-color: #707070;
+      /* transition: background-color ease 0.3s; */
+    }
+    .toggle:before {
+      content: "Dark light";
+      /* display: block; */
+      position: absolute;
+      /* z-index: 2; */
+      width: 25px;
+      height: 25px;
+      background: #fff;
+      left: 2px;
+      top: 2.5px;
+      border-radius: 50%;
+      font:bold 12px/28px Helvetica;
+      text-indent: -30px;
+      word-spacing: 30px;
+      color: #fff;
+      text-shadow: -1px -1px rgba(0,0,0,0.15);
+      white-space: nowrap;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+      transition: all cubic-bezier(0.3, 1.5, 0.7, 1) 0.3s;
+    }
+    .toggle:checked {background: #4CD964;}
+    .toggle:checked:before {left:70px;}
+    </style>
+</head>
+<body>
+<h2 id="status">Belakang</h2>
+<input id="swbtn" class="toggle" type="checkbox" />
+<script>
+    let swbtn = document.getElementById("swbtn");
+    swbtn.addEventListener("click", function(){
+        if (swbtn.checked) {
+            document.body.style.backgroundColor= 'black'
+            document.body.style.color = 'white'
+
+        } else if (!swbtn.checked)  {
+            document.body.style.backgroundColor= '#f8d2d7'
+            document.body.style.color = 'black'
+        }
+        });
+</script>
+</body>
+</html>

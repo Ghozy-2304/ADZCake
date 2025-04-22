@@ -13,17 +13,17 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-function darkMode() {
-  konfirmasi = confirm('Apakah anda yakin memakai fitur Dark Mode?')
-  if (konfirmasi) {
-    document.body.style.backgroundColor= 'black'
-    document.body.style.color = 'white'
-  } else {
-    document.body.style.backgroundColor= '#f8d2d7'
-    document.body.style.color = 'black'
-    
-  }
-}
+let swbtn = document.getElementById("swbtn");
+swbtn.addEventListener("click", function(){
+    if (swbtn.checked) {
+        document.body.style.backgroundColor= 'black'
+        document.body.style.color = 'white'
+
+    } else if (!swbtn.checked)  {
+        document.body.style.backgroundColor= '#f8d2d7'
+        document.body.style.color = 'black'
+    }
+    });
 
 document.getElementById('contactForm').addEventListener('submit', function(event) {
   event.preventDefault(); // Prevent form from submitting

@@ -183,3 +183,42 @@ input, textarea {
     display: flex;
     width: 20%;
 }
+
+.toggle {
+    /* -webkit-appearance: none; */
+    /* -moz-appearance: none; */
+    appearance: none;
+    width: 100px;
+    height: 30px;
+    position: relative;
+    border-radius: 20px;
+    /* display: inline-block; */
+    overflow: hidden;
+    /* outline: none; */
+    /* border: none; */
+    /* cursor: pointer; */
+    background-color: black;
+    /* transition: background-color ease 0.3s; */
+  }
+  .toggle:before {
+    content: "Normal Dark";
+    /* display: block; */
+    position: absolute;
+    /* z-index: 2; */
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    left: 2px;
+    top: 2px;
+    border-radius: 50%;
+    font:bold 12px/28px Helvetica;
+    text-indent: -50px;
+    word-spacing: 40px;
+    color: #fff;
+    text-shadow: -1px -1px rgba(0,0,0,0.15);
+    white-space: nowrap;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    transition: all cubic-bezier(0.3, 1.5, 0.7, 1) 0.3s;
+  }
+  .toggle:checked {background:rgb(105, 108, 105);}
+  .toggle:checked:before {left:70px;}
