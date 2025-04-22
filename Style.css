@@ -13,6 +13,7 @@ body {
     margin: 0;
 }
 
+
 header {
     background: #FFB6BA;
     padding: 20px;
@@ -24,19 +25,22 @@ header {
 nav ul {
     list-style: none;
     display: flex;
-    padding: 20px 2px 2px 2px;
+    margin-top:40px;
     gap: 15px;
 }
 
 nav a {
     text-decoration: none;
     color: #000;
+    padding-top:30px;
+    font-size:16px;
 }
 
 .active {
     color: #53D688;
     font-weight: bolder;
     font-size: 20px;
+    padding-bottom:100px
 }
 
 .dark-mode {
